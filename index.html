@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>大宋</title>
+    <!--DEV-->
+    <!--<link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less-2.5.3.min.js"></script>-->
+
+    <link rel="stylesheet" href="css/index.min.css">
+
+    <!--REM-->
+    <script>
+        ~function () {
+            let computed = function () {
+                //=>DES-W:设计稿宽度 DEV-W:设备的宽度
+                let desW = 640;
+                let devW = document.documentElement.clientWidth;
+                if (devW >= 640) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize = devW / desW * 100 + 'px';
+            };
+            computed();
+            window.addEventListener('resize', computed, false);
+        }();
+    </script>
+</head>
+<body>
+<main class="mainBox">
+    <!--LOADING-->
+    <section class="loadingBox">
+        <div class="title">
+            <h1>南宋</h1>
+            <h2>简单H5场景的交互</h2>
+        </div>
+        <div class="progress">
+            <div class="run"></div>
+        </div>
+    </section>
+
+    <!--PHONE-->
+    <section class="phoneBox">
+        <div class="header">
+            <img src="img/phoneLogo.png" alt="南宋" class="logo">
+            <span class="time">00:00</span>
+        </div>
+        <div class="listen">
+            <div class="move"></div>
+            <a href="javascript:;" class="touch"></a>
+        </div>
+        <div class="detail">
+            <a href="javascript:;" class="touch"></a>
+        </div>
+
+        <!--AUDIO-->
+        <audio src="audio/bell.mp3" loop preload="none" id="audioBell"></audio>
+        <audio src="audio/say.mp3" preload="none" id="audioSay"></audio>
+    </section>
+
+    <!--MESSAGE-->
+    <section class="messageBox">
+        <ul class="talkBox clearfix">
+            <li class="student">
+                <img src="img/messageStudent.png" alt="">
+                <i></i>
+                东风夜放花千树。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                更吹落、星如雨。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                宝马雕车香满路。
+            </li>
+            <li class="student">
+                <img src="img/messageStudent.png" alt="">
+                <i></i>
+                蛾儿雪柳黄金缕。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                笑语盈盈暗香去。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                众里寻他千百度。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                蓦然回首，
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                那人却在，灯火阑珊处。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                蓦然回首，
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                那人却在，灯火阑珊处。
+            </li>
+            <li class="student">
+                <img src="img/messageStudent.png" alt="">
+                <i></i>
+                东风夜放花千树。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                更吹落、星如雨。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                宝马雕车香满路。
+            </li>
+            <li class="student">
+                <img src="img/messageStudent.png" alt="">
+                <i></i>
+                蛾儿雪柳黄金缕。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                笑语盈盈暗香去。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                众里寻他千百度。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                蓦然回首，
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                那人却在，灯火阑珊处。
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                蓦然回首，
+            </li>
+            <li class="teacher">
+                <img src="img/messageLogo.png" alt="">
+                <i></i>
+                那人却在，灯火阑珊处。
+            </li>
+        </ul>
+        <div class="keyBord">
+            <span>凤箫声动，玉壶光转，一夜鱼龙舞。</span>
+            <a href="javascript:;" class="submit"></a>
+        </div>
+        <audio src="audio/music.mp3" loop preload="none" id="musicAudio"></audio>
+    </section>
+
+    <!--CUBE-->
+    <section class="cubeBox">
+        <ul class="box">
+            <li><img src="img/cube1.png" alt=""></li>
+            <li><img src="img/cube2.png" alt=""></li>
+            <li><img src="img/cube3.png" alt=""></li>
+            <li><img src="img/cube4.png" alt=""></li>
+            <li><img src="img/cube5.png" alt=""></li>
+            <li><img src="img/cube6.png" alt=""></li>
+        </ul>
+        <img src="img/cubeTip.png" alt="" class="tip">
+    </section>
+
+    <!--DETAIL-->
+    <section class="detailBox">
+        <!--RETURN-->
+        <a href="javascript:;" class="returnLink"></a>
+
+        <!--SWIPER-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page1">
+                    <dl id="makisuBox">
+                        <dt>青玉案·元夕</dt>
+                        <dd>
+                            <em>01</em>
+                            <p>作者：辛弃疾</p>
+                        </dd>
+                        <dd>
+                            <em>02</em>
+                            <p>东风夜放花千树。</p>
+                        </dd>
+                        <dd>
+                            <em>03</em>
+                            <p>更吹落、星如雨。</p>
+                        </dd>
+
+                        <dd>
+                            <em>05</em>
+                            <p>宝马雕车香满路。</p>
+                        </dd>
+                        <dd>
+                            <em>06</em>
+                            <p>凤箫声动，玉壶光转，一夜鱼龙舞。</p>
+                        </dd>
+                        <dd>
+                            <em>07</em>
+                            <p>蛾儿雪柳黄金缕。</p>
+                        </dd>
+                        <dd>
+                            <em>08</em>
+                            <p>笑语盈盈暗香去。</p>
+                        </dd>
+                        <dd>
+                            <em>09</em>
+                            <p>众里寻他千百度。</p>
+                        </dd>
+                        <dd>
+                            <em>10</em>
+                            <p>蓦然回首，那人却在，灯火阑珊处。</p>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="swiper-slide page2">
+                    <h2>专业技能</h2>
+                    <img src="img/course1.png" alt="">
+                    <img src="img/course2.png" alt="">
+                    <img src="img/course3.png" alt="">
+                    <img src="img/course4.png" alt="">
+                    <img src="img/course5.png" alt="">
+                    <img src="img/course6.png" alt="">
+                    <img src="img/course.png" alt="">
+                </div>
+
+                <div class="swiper-slide page3">
+
+                </div>
+                <div class="swiper-slide page4">
+
+                </div>
+                <div class="swiper-slide page5">
+
+                </div>
+                <div class="swiper-slide page6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--IMPORT JS-->
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/makisu.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
